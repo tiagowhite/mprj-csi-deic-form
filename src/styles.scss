@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+
+/*VARIABLES*/
+@import 'assets/scss/vars';
+@import 'assets/scss/mixins';
+
+/*TYPOGRAPHY*/
+@import 'assets/scss/typography';
+
+/*Site structure*/
+@import 'assets/scss/mprj-material-theme';
+@import 'assets/scss/main';
+
+/*FX*/
+@import "assets/scss/keyframes";
