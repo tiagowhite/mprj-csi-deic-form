@@ -3,6 +3,9 @@
 @import 'assets/scss/vars';
 @import 'assets/scss/mixins';
 
+/*FX*/
+@import "assets/scss/keyframes";
+
 /*TYPOGRAPHY*/
 @import 'assets/scss/typography';
 
@@ -10,5 +13,3 @@
 @import 'assets/scss/mprj-material-theme';
 @import 'assets/scss/main';
 
-/*FX*/
-@import "assets/scss/keyframes";
