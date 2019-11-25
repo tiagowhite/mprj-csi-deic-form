@@ -6,6 +6,7 @@
     "deprecation": {
       "severity": "warning"
     },
+    "whitespace": [true, "check-branch", "check-operator", "check-typecast", "check-module"],
     "component-class-suffix": true,
     "contextual-lifecycle": true,
     "directive-class-suffix": true,

@@ -1,0 +1,16 @@
+h1 {
+  flex: 0;
+  display: flex;
+
+
+  a {
+    margin: auto;
+    text-decoration: none;
+    display: block;
+    color: #fafafa;
+    min-width: 300px;
+    min-height: 100px;
+    background: url('/assets/images/logo-mprj-portal.svg');
+  }
+
+}

@@ -1,11 +1,11 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RouterModule } from '@angular/router';
 import { EnsureModuleLoadedOnceGuard } from '@core/ensureModuleLoadedOnceGuard';
 
-
 import * as core from '../core/components';
+
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -15,7 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   imports: [
     CommonModule,
     HttpClientModule,
-    MatToolbarModule
+    MatToolbarModule,
+    RouterModule
   ],
   exports: [
     ...core.components
