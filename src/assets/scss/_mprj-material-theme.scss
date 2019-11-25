@@ -17,17 +17,5 @@ $mprj-material-theme-base-typography: mat-typography-config(
   $font-family: '"Roboto", sans-serif'
 );
 
-$mprj-material-theme-heading-typography: mat-typography-config(
-  $font-family: '"Open Sans", sans-serif',
-  $headline: mat-typography-level(24px, 32px, 400)
-);
-
-body {
-  font-family: mat-font-family($mprj-material-theme-base-typography);
-}
-.mat-h1, .mat-h2, .mat-headline, h1, h2, h3 {
-  font-family: mat-font-family($mprj-material-theme-heading-typography);
-  font-weight: 500;
-}
 @include angular-material-typography($mprj-material-theme-base-typography);
 @include angular-material-theme($mprj-material-theme);
