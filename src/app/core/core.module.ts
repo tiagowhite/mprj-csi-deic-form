@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { MaterialModule } from '../shared/material.module';
 
+import { MaterialModule } from '../material.module';
+import { EnsureModuleLoadedOnceGuard } from '@core/ensureModuleLoadedOnceGuard';
 import * as core from '../core/components';
 
 @NgModule({
@@ -13,8 +14,12 @@ import * as core from '../core/components';
     MaterialModule
   ],
   exports: [
-    ...core.components
+    ...core.components,
+    MaterialModule
   ]
 })
-export class CoreModule {
+export class CoreModule extends EnsureModuleLoadedOnceGuard {
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
+    super(parentModule);
+  }
 }

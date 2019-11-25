@@ -14,11 +14,11 @@ $mprj-material-theme: mat-light-theme($mprj-material-theme-primary, $mprj-materi
 
 
 $mprj-material-theme-base-typography: mat-typography-config(
-  $font-family: '"Open Sans", sans-serif'
+  $font-family: '"Roboto", sans-serif'
 );
 
 $mprj-material-theme-heading-typography: mat-typography-config(
-  $font-family: 'Roboto, sans-serif',
+  $font-family: '"Open Sans", sans-serif',
   $headline: mat-typography-level(24px, 32px, 400)
 );
 

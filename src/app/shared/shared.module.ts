@@ -12,8 +12,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   exports: [
-    FormsModule,
-    MaterialModule
+    FormsModule
     /*...shared.components*/
   ]
 })
