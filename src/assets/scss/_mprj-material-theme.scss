@@ -5,21 +5,24 @@
 @include mat-core();
 
 $mprj-material-theme-primary: mat-palette($mat-blue-gray, 800);
-$mprj-material-theme-secondary: mat-palette($mat-yellow, 600);
 $mprj-material-theme-accent: mat-palette($mat-cyan, 500);
+$mprj-material-theme-warn: mat-palette($mat-yellow, 600);
+$mprj-material-theme-background: mat-palette($mat-blue-gray, 50);
 
-$mprj-material-theme-warn: mat-palette($mat-pink, 500, 700);
-
-$mprj-material-theme: mat-light-theme($mprj-material-theme-primary, $mprj-material-theme-secondary, $mprj-material-theme-accent);
+$mprj-material-theme: mat-light-theme(
+    $mprj-material-theme-primary,
+    $mprj-material-theme-accent,
+    $mprj-material-theme-warn
+);
 
 
 $mprj-material-theme-base-typography: mat-typography-config(
-  $font-family: 'Open Sans, sans-serif'
+  $font-family: 'Roboto, sans-serif'
 );
 
 $mprj-material-theme-heading-typography: mat-typography-config(
-  $font-family: 'Roboto, sans-serif',
-  $headline: mat-typography-level(24px, 32px, 400)
+  $font-family: '"Open Sans", sans-serif',
+  $headline: mat-typography-level(24px, 32px)
 );
 
 body {

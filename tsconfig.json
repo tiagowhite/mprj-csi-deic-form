@@ -5,7 +5,8 @@
     "paths": {
       "@env": ["environments/environment"],
       "@shared/*": ["app/shared/*"],
-      "@core/*": ["app/core/*"]
+      "@core/*": ["app/core/*"],
+      "@assets": ["assets"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

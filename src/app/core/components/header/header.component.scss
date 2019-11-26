@@ -1,3 +1,7 @@
+mat-toolbar {
+  flex-grow: 0;
+}
+
 h1.logo-mprj {
   display: block;
 
@@ -9,7 +13,7 @@ h1.logo-mprj {
     color: #fafafa;
     width: 336px;
     height: 57px;
-    background: url('/assets/images/logo-mprj-portal.svg');
+    background: url('~assets/images/logo-mprj-portal.svg');
     background-size: 336px 57px;
   }
 

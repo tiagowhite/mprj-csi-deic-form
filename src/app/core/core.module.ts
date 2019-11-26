@@ -3,20 +3,18 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { EnsureModuleLoadedOnceGuard } from '@core/ensureModuleLoadedOnceGuard';
+import { SharedModule } from '@shared/shared.module';
+
 
 import * as core from '../core/components';
-
-
-import { MatToolbarModule } from '@angular/material/toolbar';
-
 
 @NgModule({
   declarations: [...core.components],
   imports: [
     CommonModule,
     HttpClientModule,
-    MatToolbarModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   exports: [
     ...core.components
