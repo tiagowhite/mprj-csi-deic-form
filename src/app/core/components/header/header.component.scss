@@ -1,16 +1,16 @@
-h1 {
-  flex: 0;
-  display: flex;
-
+h1.logo-mprj {
+  display: block;
 
   a {
+    display: block;
+    text-indent: -9999px;
     margin: auto;
     text-decoration: none;
-    display: block;
     color: #fafafa;
-    min-width: 300px;
-    min-height: 100px;
+    width: 336px;
+    height: 57px;
     background: url('/assets/images/logo-mprj-portal.svg');
+    background-size: 336px 57px;
   }
 
 }
