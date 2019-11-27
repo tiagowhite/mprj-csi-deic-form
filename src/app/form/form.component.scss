@@ -2,8 +2,10 @@
   mat-form-field {
     width: 100%;
   }
-  a.mprj-form-id {
-    min-width: 100% !important;
-  }
+
 }
 
+::ng-deep .mprj-id-btn, ::ng-deep .mprj-email-input {
+  width: 100% !important;
+  min-width: unset !important;
+}
